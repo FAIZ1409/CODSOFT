@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learning Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+  }
+  .header {
+    background: #1a73e8;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  .logo {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .navbar {
+    margin-top: 20px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f4f4f9;
+  }
+  .hero h2 {
+    font-size: 3em;
+    margin: 0 0 20px;
+  }
+  .hero button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .hero button:hover {
+    background: #155cb0;
+  }
+  .about {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fbfcfd;
+    color: black;
+  }
+  .about h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  .about img {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .services {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+  }
+  .services h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  .service-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .service {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .service h4 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+  }
+  .footer {
+    background: #1a73e8;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer a {
+    color: yellow;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">E-Learning Website</h1>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#services">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h2>Welcome to Our E-Learning Platform</h2>
+    <p>Learn, Grow, and Succeed with Our Expert-Led Courses!</p>
+    <button id="cta-button" onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'});">Start Learning</button>
+  </section>
+  
+  <section id="about" class="about">
+    <h3>About Us</h3>
+    <p>We are committed to providing high-quality courses designed to help you achieve your goals and advance in your career. Our mission is to empower learners with practical skills, industry-relevant knowledge, and hands-on projects to ensure success in the modern world. Join us and unlock your full potential today!</p>
+    <img src="img/E-learning.jpg" alt="About Us Image">
+  </section>
+  
+  <section id="services" class="services">
+    <h2>Our Courses</h2>
+    <div class="service-box">
+      <div class="service">
+        <img src="img/Webdevelopment.jpg" alt="Web Development">
+        <h4>Web Development</h4>
+        <p>Master the art of building responsive and interactive websites.</p>
+      </div>
+      <div class="service">
+        <img src="img/SEO optimisation.jpg" alt="SEO Optimization">
+        <h4>SEO Optimization</h4>
+        <p>Learn strategies to improve website visibility and search rankings.</p>
+      </div>
+      <div class="service">
+        <img src="img/Marketing.jpg" alt="Marketing">
+        <h4>Marketing</h4>
+        <p>Discover effective marketing techniques to grow your brand.</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="contact" class="footer">
+    <p>Contact us at: <a href="mailto:faizacct@gmail.com">faizacct@gmail.com</a></p>
+    <p>&copy; 2024 Mohammed Faiz</p>
+  </footer>
+</body>
+</html>
